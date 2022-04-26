@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: src
+    description: raw source data for 4 sources
+    database: sourcedb
+    schema: mk_mall
+    tables:
+      - name: customers
+      - name: nations
+      - name: regions
+      - name: orders
