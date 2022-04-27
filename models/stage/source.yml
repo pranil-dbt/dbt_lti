@@ -10,3 +10,4 @@ sources:
       - name: nations
       - name: regions
       - name: orders
+      - name: lineitems
