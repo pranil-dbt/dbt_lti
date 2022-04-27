@@ -32,10 +32,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  Analytics:
+  dbt_lti:
     # Applies to all files under models/example/
     example:
       materialized: view
+    stage:
+      materialized: view
+    mart:
+      materialized: table
 tests:
   +store_failures: true
   +schema: failed

@@ -11,3 +11,4 @@ sources:
       - name: regions
       - name: orders
       - name: lineitems
+      - name: suppliers
