@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_nation
+    columns:
+    - name: nation_id
+      description: '{{ doc("primary_key") }}'
+      tests:
+        - unique
+        - not_null
+    - name: region_id
+      description: '{{ doc("foreign_key") }}'
+      tests:
+        - not_null
+        - relationships:
+           to: ref('stg_region')
+           field: region_id
