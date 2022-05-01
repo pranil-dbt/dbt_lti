@@ -1,5 +1,5 @@
 -- Use CTEs for easy reading and debugging
-{{ config(materialized='table') }}
+-- {{ config(materialized='table') }}
 
 with customer as (
 select
