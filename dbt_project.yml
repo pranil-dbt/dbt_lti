@@ -39,7 +39,7 @@ models:
     stage:
       materialized: view
     mart:
-      materialized: table
+      materialized: view
 tests:
   +store_failures: true
   +schema: failed
